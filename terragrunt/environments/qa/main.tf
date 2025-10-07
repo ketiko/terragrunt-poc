@@ -1,6 +1,7 @@
 resource "local_file" "common" {
   # content  = var.project_name
-  content  = var.common_vars.project_name
+  # content  = var.var.common_vars.project_name
+  content  = local.content_body
   filename = "common.txt"
 }
 
@@ -8,6 +9,14 @@ resource "local_file" "common" {
 #   type = string
 # }
 
-variable "common_vars" {
-  type = map(any)
+locals {
+  content_body = var.environment == "prod" ? var.common.eks_clusters["qa"] : var.common.eks_clusters["prod"]
+}
+
+variable "environment" {
+  type = string
+}
+
+variable "common" {
+  type = any
 }
