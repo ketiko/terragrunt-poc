@@ -15,5 +15,6 @@ terraform {
 
 inputs = {
   # project_name = include.root.locals.project_name
-  project_name = local.project_name
+  # project_name = local.project_name
+  common_vars = local.common_vars.locals
 }
