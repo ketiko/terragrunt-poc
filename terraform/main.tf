@@ -1,8 +1,8 @@
-# terraform {
-#   backend "local" {
-#     path = "terraform-only.tfstate"
-#   }
-# }
+terraform {
+  backend "local" {
+    path = "terraform-only.tfstate"
+  }
+}
 
 # module "provider" {
 #   source = "git@github.com:ketiko/terraform-modules.git//provider?ref=main"
