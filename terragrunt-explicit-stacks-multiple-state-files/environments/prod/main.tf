@@ -1,3 +1,4 @@
+
 resource "local_file" "common" {
   # content  = var.project_name
   # content  = var.var.common_vars.project_name
@@ -22,11 +23,11 @@ variable "common" {
 }
 
 module "rds" {
-  source = "git@github.com:ketiko/terraform-modules.git//modules/rds?ref=main"
+  source = "git@github.com:ketiko/terraform-modules.git//rds?ref=main"
 }
 
 module "s3" {
-  source = "git@github.com:ketiko/terraform-modules.git//modules/s3?ref=main"
+  source = "git@github.com:ketiko/terraform-modules.git//s3?ref=main"
 }
 
 module "redis" {

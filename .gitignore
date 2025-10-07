@@ -38,3 +38,4 @@ terraform.rc
 .terragrunt-cache
 rds.txt
 s3.txt
+.terragrunt-stack

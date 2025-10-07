@@ -3,5 +3,5 @@ include "root" {
 }
 
 terraform {
-  source = "git@github.com:ketiko/terraform-modules.git//modules/s3?ref=main"
+  source = "git@github.com:ketiko/terraform-modules.git//s3?ref=main"
 }
