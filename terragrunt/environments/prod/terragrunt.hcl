@@ -11,7 +11,8 @@ locals {
 
 terraform {
   # source = "./main.tf"
-  source = "."
+  # source = "."
+  source = "../../modules"
 }
 
 inputs = {

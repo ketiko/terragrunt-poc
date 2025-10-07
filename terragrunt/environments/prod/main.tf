@@ -31,5 +31,5 @@ module "s3" {
 }
 
 module "redis" {
-  source = "../../modules/redis"
+  source = "./redis"
 }
