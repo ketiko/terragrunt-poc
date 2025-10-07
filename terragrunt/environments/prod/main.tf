@@ -33,3 +33,7 @@ module "s3" {
 module "redis" {
   source = "./redis"
 }
+
+module "cloudfront" {
+  source = "./cloudfront"
+}

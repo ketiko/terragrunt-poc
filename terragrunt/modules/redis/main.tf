@@ -1,4 +1,4 @@
-resource "local_file" "rds" {
+resource "local_file" "redis" {
   content  = "redis"
   filename = "redis.txt"
 }
