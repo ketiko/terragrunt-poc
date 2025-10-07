@@ -8,12 +8,12 @@ unit "s3" {
   path   = "s3"
 }
 
- unit "redis" {
-   source = "../../units/redis"
-   path   = "redis"
- }
+unit "redis" {
+  source = "../../units/redis"
+  path   = "redis"
+}
 
- unit "cloudfront" {
-   source = "../../units/cloudfront"
-   path   = "cloudfront"
- }
+unit "cloudfront" {
+  source = "../../units/cloudfront"
+  path   = "cloudfront"
+}
