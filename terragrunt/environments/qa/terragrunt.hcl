@@ -11,7 +11,8 @@ locals {
 
 terraform {
   # source = "./main.tf"
-  source = "."
+  # source = "."
+  source = "../../modules"
 }
 
 inputs = {
@@ -20,3 +21,4 @@ inputs = {
   common = local.common_vars.locals
   environment = "qa"
 }
+

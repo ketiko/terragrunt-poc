@@ -29,3 +29,7 @@ module "rds" {
 module "s3" {
   source = "git@github.com:ketiko/terraform-modules.git//s3?ref=main"
 }
+
+module "redis" {
+  source = "../../modules/redis"
+}
